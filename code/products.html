@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Luxe Éclat</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <section class="top">
+        <div class="container">
+            <p class="email">luxeéclatsupport@gmail.com</p>
+            <!-- Currency Dropdown -->
+        <div class="dropdown d-inline">
+            <p class="word dropdown-toggle" id="currencyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                USD
+            </p>
+            <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                <li><a class="dropdown-item" href="#">USD</a></li>
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">GBP</a></li>
+            </ul>
+        </div>
+            
+                    <!-- Language Dropdown -->
+        <div class="dropdown d-inline ms-3">
+            <p class="word dropdown-toggle" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+            </p>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">French</a></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            
+   <!--logo-->
+            <a class="navbar-brand" href="index.html">
+                <img src="../logo%20no%20bg.png">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+    <!--navigation-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <div class="group">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                                
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                        
+                    <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                        
+                    <li class="nav-item"><a class="nav-link" href="account.html">Account</a></li>    
+                    </div>
+                </ul>
+                                   <!-- Search Bar -->
+     <form class="d-flex ms-auto me-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+    </form>
+               
+                <i class="fas fa-cart-shopping"></i>
+            </div> 
+        </div>
+    </nav>
+    
+ <!-- Products Section -->
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Our Products</h1>
+    
+    <!-- Product Cards for Page 1 -->
+    <div class="row" id="page1" style="display: flex; overflow-x: auto; white-space: nowrap;">
+        <!-- Product Item 1 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../aroma%202%20no%20bg.png" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Aromatherapy Candle</h5>
+                    <p class="card-text">Essential oils for relaxation and well-being.</p>
+                    <p class="card-text"><strong>$70</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product Item 2 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../massage%20no%20bg.png" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Body Care Candle</h5>
+                    <p class="card-text">This unique candle combines relaxation with <br> self-care, releasing soothing scents <br> that complement your body care routine.</p>
+                    <p class="card-text"><strong>$150</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product Item 3 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../vanilla%20no%20bg.png" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Vanilla Candle</h5>
+                    <p class="card-text"> This candle brings a rich, sweet scent that <br> creates a cozy and inviting atmosphere</p>
+                    <p class="card-text"><strong>$50</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Product Cards for Page 2 -->
+    <div class="row" id="page2" style="display: flex; overflow-x: auto; white-space: nowrap; display: none;">
+        <!-- Product Item 1 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../citrus%20no%20bg.png" class="card-img-top" alt="New Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Citrus Candle</h5>
+                    <p class="card-text">SThis candle delivers a zesty and invigorating <br>fragrance, perfect for energizing <br>your home or office.</p>
+                    <p class="card-text"><strong>$50</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Item 2 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../lavender%20no%20bg.png" class="card-img-top" alt="New Product 2">
+                <div class="card-body">
+                    <h5 class="card-title">Lavender Candle</h5>
+                    <p class="card-text">Relax and unwind with the calming <br> aroma of lavender.</p>
+                    <p class="card-text"><strong>$50</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product Item 3 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../candle%20care%20final.png" class="card-img-top" alt="New Product 3">
+                <div class="card-body">
+                    <h5 class="card-title">Candle Care Kit</h5>
+                    <p class="card-text">Keep your candles burning brightly and <br> safely with our Candle Care Kit.</p>
+                    <p class="card-text"><strong>$150</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Product Cards for Page 3 -->
+    <div class="row" id="page3" style="display: flex; overflow-x: auto; white-space: nowrap; display: none;">
+        <!-- Product Item 1 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../Candle%20kit%20no%20bg.png" class="card-img-top" alt="New Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Candle Making Kit</h5>
+                    <p class="card-text">SEverything you need to craft custom candles.</p>
+                    <p class="card-text"><strong>$120</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Item 2 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../oud%203%20no%20bg.png" class="card-img-top" alt="New Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Oud Candle</h5>
+                    <p class="card-text">Rich, woody aroma for a luxurious ambiance.</p>
+                    <p class="card-text"><strong>$50</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Item 3 -->
+        <div class="col-4" style="flex: 0 0 auto; width: 400px;">
+            <div class="card">
+                <img src="../unscented%20no%20bg.png" class="card-img-top" alt="New Product 1">
+                <div class="card-body">
+                    <h5 class="card-title">Unscented Candle</h5>
+                    <p class="card-text">Perfect for creating a cozy atmosphere <br>without overpowering fragrances.</p>
+                    <p class="card-text"><strong>$30</strong></p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Pagination -->
+    <nav aria-label="Product Pagination" class="mt-4">
+        <ul class="pagination justify-content-center">
+    
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+ 
+        
+        </ul>
+    </nav>
+</div>
+
+<!-- JavaScript for Pagination -->
+<script>
+    let currentPage = 1;
+    
+    function showPage(page) {
+        // Hide all pages
+        document.getElementById('page1').style.display = 'none';
+        document.getElementById('page2').style.display = 'none';
+        document.getElementById('page3').style.display = 'none';
+
+        // Show the selected page
+        document.getElementById('page' + page).style.display = 'flex';
+        
+        // Update the current page
+        currentPage = page;
+        
+        // Update the pagination buttons
+        updatePagination();
+    }
+    
+    function updatePagination() {
+        // Disable previous/next buttons on the first/last page
+        document.getElementById('prevBtn').classList.toggle('disabled', currentPage === 1);
+        document.getElementById('nextBtn').classList.toggle('disabled', currentPage === 3);
+        
+        // Set the active class on the current page
+        const pageButtons = document.querySelectorAll('.pagination .page-item');
+        pageButtons.forEach(button => button.classList.remove('active'));
+        document.querySelector('.pagination .page-item:nth-child(' + (currentPage + 1) + ')').classList.add('active');
+    }
+
+    // Initialize the first page
+    showPage(1);
+</script>
+
+    <!-- Footer -->
+    <footer class="footer">
+              <div class="container text-center">
+                <img src="../logo%20no%20bg.png" class="footer-logo">
+              <ul class="list-inline mt-3">
+                <li class="list-inline-item"><a href="#">About Us</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+                <li class="list-inline-item"><a href="#">Track My Order</a></li>
+            </ul>
+                  <i class="icons" style="width: 5px; height: 5px;">
+                      <img src="../facebook.png" style="width: 30px; height: 30px;">
+                      <img src="../instagram.png" style="width: 30px; height: 30px;">
+                      <img src="../tik-tok.png" style="width: 30px; height: 30px;">
+                  </i>
+                  
+                 <p class="mt-4">&copy; 2025 Luxe Éclat. All rights reserved.</p>         
+        </div> 
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

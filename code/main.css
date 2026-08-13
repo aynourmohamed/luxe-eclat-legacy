@@ -1,0 +1,695 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    background-color: #c2b5be;
+    display: flex; 
+}
+
+.email{
+    color: white;
+    float: left;
+    margin-top: 15px;
+}
+
+.word{
+    color: white;
+    float: right;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Remove any margin */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.group {
+    display: flex;
+    margin-right: 200px;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+    height: 150px;
+    max-height: 100%;
+}
+
+.nav-link {
+    color: #c2b5be;
+    font-weight: 500;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: #c2b5be;
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    color: #c2b5be;
+}
+
+form.d-flex {
+    align-items: center;
+}
+
+form.d-flex .form-control {
+    border-radius: 20px;
+    border: 1px solid #c2b5be;
+    padding: 6px 12px;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+form.d-flex .form-control:focus {
+    border-color: #c2b5be;
+    box-shadow: 0px 0px 5px rgba(74, 63, 191, 0.5);
+}
+
+form.d-flex .btn {
+    border-radius: 20px;
+    color: white;
+    border-color: #c2b5be;
+    background-color: #c2b5be;
+    padding: 6px 12px;
+}
+
+form.d-flex .btn:hover {
+    background-color: white;
+    color: #c2b5be;
+}
+
+/* Style for the cart icon */
+.fas.fa-cart-shopping {
+    font-size: 2rem; 
+    color: #c2b5be;  
+    cursor: pointer; 
+    transition: color 0.3s ease; /* Add transition effect on hover */
+}
+
+.fas.fa-cart-shopping:hover {
+    color: black; 
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    padding: 150px 0;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    margin-top: 0; 
+    padding-top: 0;
+}
+
+.carousel-item img {
+    display: block;
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover;
+    margin: 0;
+}
+
+.header-section h1 {
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #c2b5be;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-section p {
+    font-size: 1.7vw;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.5;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-section .btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: #c2b5be;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-primary {
+    background-color: #c2b5be;
+    border: 1.5px solid #fff;
+}
+
+.btn-primary:hover {
+    background-color: #c2b5be;
+}
+
+.btn-outline-light {
+    border: 1.5px solid #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #6c63ff;
+}
+
+/* Picks for the Season */
+.picks-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f7f6;
+}
+
+.picks-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #c2b5be;
+    font-family: fantasy;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover; 
+    height: 200px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card-text {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card button {
+    margin-top: auto; 
+}
+
+.card button:hover{
+    background-color: white;
+    color: #c2b5be;
+    border-color: #c2b5be;
+}
+
+/* Why Choose Us */
+.why-choose {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #c2b5be;
+    font-family: fantasy;
+}
+
+.icon-box {
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.icon-box img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.icon-box p {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.testimonials {
+    padding: 60px 20px;
+    background-color: #c2b5be; 
+    text-align: center;
+}
+
+.testimonial-content {
+    text-align: left;
+    color: #ffffff; 
+}
+
+.testimonials h2 {
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: fantasy;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: white;
+    max-width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.testimonial-nav button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.testimonial-nav .active {
+    font-weight: bold;
+    color: black;
+    background-color: white; 
+    border-radius: 50%; 
+    padding: 5px;
+}
+
+.testimonial-nav button:hover {
+    color: black;
+}
+
+
+.testimonial-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonial-nav span {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial-nav span.active,
+.testimonial-nav span:hover {
+    background-color: white;
+    color: #c2b5be;
+    border-color: #c2b5be;
+}
+
+/* Photo Styling */
+.testimonial-photo img {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    display: block; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.subscribe {
+    background-color: white;
+    background-size: cover;
+    color: #c2b5be;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.subscribe h2{
+        font-family: fantasy;
+}
+
+.subscribe p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.subscribe form {
+    margin-bottom: 20px;
+}
+
+.subscribe input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 70%;
+    max-width: 400px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: #c2b5be;
+    border: none;
+}
+
+/*Products*/
+h1{
+    font-family: fantasy;
+    color: #c2b5be;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;  
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover; 
+    height: 200px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card-text {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card button {
+    margin-top: auto; 
+}
+
+.card button{
+    color: white;
+    background-color: #c2b5be; 
+}
+.card button:hover {
+    background-color: white;
+    color: #c2b5be;
+    border-color: #c2b5be;
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 400px;
+    margin: 10px; 
+}
+
+/* Styling for Pagination */
+.pagination .page-item.active .page-link {
+    background-color: #c2b5be;
+    border-color: #c2b5be;
+    color: white;
+}
+
+.pagination .page-item .page-link {
+    color: #c2b5be;
+    border-color: #c2b5be;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #ccc;
+    border-color: #ccc;
+}
+
+.pagination .page-link {
+    cursor: pointer;
+}
+
+.pagination .page-link:hover {
+    background-color: #e0c7d4;
+}
+
+/* To hide product sections initially except the first one */
+#page2, #page3 {
+    display: none;
+}
+
+/* Style for the individual product cards */
+.card {
+    margin-right: 20px; 
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: white; 
+    color: #333; 
+}
+
+.contact-us li{ 
+    margin-bottom: 30px;
+}
+
+.contact-us h1,
+.contact-us h3 {
+    color: #c2b5be; 
+    font-family: fantasy;
+}
+
+.contact-us p {
+    font-size: 1rem;
+    color: black;
+}
+
+.contact-us .form-control {
+    border-radius: 0; 
+    box-shadow: none; 
+    border-color: #ced4da; 
+}
+
+.contact-us .btn-primary {
+    border-radius: 20px; 
+    background-color: #c2b5be; 
+    color: white; 
+    border: none; 
+}
+
+.contact-us .btn-primary:hover {
+    background-color: white; 
+    border: 1px solid #c2b5be; 
+    color: #c2b5be; 
+}
+
+
+/*help*/
+/* Change the color of the question box when clicked */
+.accordion-button:focus {
+    background-color: #e2d9d9;  
+    border-color: #c2b5be;      
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e2d9d9;  
+    color: #000;                
+}
+
+.accordion-button {
+    font-weight: bold;
+    color: #000; 
+}
+
+h1 {
+    color: #c2b5be;
+        font-family: fantasy;
+
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #c2b5be;
+        font-family: fantasy;
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+}
+
+
+.live-chat .btn-primary{
+    border-radius: 20px !important;
+    background-color: #c2b5be !important;
+    color: white !important;
+    border: none !important;
+    font-size: 15px !important; 
+    padding: 12px 30px !important; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important; 
+    transition: transform 0.2s ease-in-out !important; 
+}
+
+.live-chat .btn-primary:hover {
+    background-color: white !important; 
+    transform: scale(1.05) !important;
+    color: #c2b5be !important;
+}
+
+/*account*/
+.text-bg-light {
+    background-color: white !important;
+}
+
+h2 {
+    color: #c2b5be;
+    font-family: fantasy;
+}
+
+a{
+    color: #c2b5be;
+}
+
+.btn-primary {
+    border-radius: 20px; 
+    background-color: #c2b5be; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 15px; 
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: #c2b5be; 
+    transform: scale(1.05); 
+}
+
+/*footer*/
+.footer {
+    background-image: url(../gradient.png);
+    background-color: white;
+    padding: 20px 10px;
+    text-align: center;
+    width: 100vw; 
+    position: relative;
+    left: 0;
+    margin: 0; 
+}
+
+.footer-logo {
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer .list-inline-item {
+    margin: 0 10px;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 0.85rem;
+}
+
+.footer a:hover {
+    color: #c2b5be;
+    text-decoration: underline #c2b5be;
+}
+
+.footer p {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    color: #aaa;
+}
