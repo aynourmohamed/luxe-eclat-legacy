@@ -2,7 +2,7 @@
 
 The original Luxe Éclat candle e-commerce website, built with HTML, CSS, JavaScript, and Bootstrap. This repo is kept as an archived "v1" so the project's progression is visible.
 
-**Looking for the modern version?** See [https://github.com/aynourmohamed/luxe-eclat-modern], rebuilt with Next.js, TypeScript, and Tailwind CSS (luxe-eclat-modern.vercel.app).
+**Looking for the modern version?** See [https://github.com/aynourmohamed/luxe-eclat-modern], rebuilt with Next.js, TypeScript, and Tailwind CSS [luxe-eclat-modern.vercel.app].
 
 ## Tech Stack
 
